@@ -1,0 +1,14 @@
+<HTML>
+  <XML id="source" src="Consistency Check.xml"></XML>
+  <XML id="style" src="Consistency Check.xsl"></XML>
+  
+  <HEAD>
+    <TITLE>CA Gen Report</TITLE>
+ </HEAD>
+
+  <SCRIPT FOR="window" EVENT="onload">
+    xslTarget.innerHTML = source.transformNode(style.XMLDocument);
+  </SCRIPT>
+  <BODY id="xslTarget">
+  </BODY>
+</HTML>

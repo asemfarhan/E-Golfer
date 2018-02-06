@@ -1,0 +1,68 @@
+:execdef
+        user=mansour
+        date=2017/07/17
+        time=22:14:05
+        os=NT.
+
+:source
+        model='EGOLF'
+        subset='ALL'
+        dateup=0000/00/00
+        timeup=00:00
+        saved=NO
+        schema=9.2.A6
+        level=9.2.A6.01
+        codepage=1252.
+:esource.
+
+:systems
+        source=C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\.
+:esystems.
+
+:execunit
+        language='C'
+        os=WINDOWS
+        execenv=WINDOWS
+        dbms=ODBC
+        dbname=IEFDB
+        cascade=CASCADE.
+
+:entity
+        member=E0004080
+        sql=ODBC
+        create=NO
+        update=NO
+        delete=YES.
+:eentity
+:entity
+        member=E0001035
+        sql=ODBC
+        create=NO
+        update=NO
+        delete=YES.
+:eentity
+:entity
+        member=E0001032
+        sql=ODBC
+        create=NO
+        update=NO
+        delete=YES.
+:eentity
+:relation
+        member=F0004888
+        sql=NO
+        create=NO
+        update=NO
+        delete=YES.
+:erelation
+:relation
+        member=F0003820
+        sql=NO
+        create=NO
+        update=NO
+        delete=YES.
+:erelation
+:eexecunit.
+
+:eexecdef.
+

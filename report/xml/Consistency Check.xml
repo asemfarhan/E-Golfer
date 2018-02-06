@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Report>
+<title>Consistency Check</title>
+<modelname>EGOLF</modelname>
+<subset>(complete model)</subset>
+<datetime>May 11, 2017  01:45</datetime>
+<ReportDescription Level="Analysis" Description=" Warnings, Severe Warnings, Errors, Fatal Errors">
+<THLENT Name="SCORE_CARD" Label="Entity">
+<THLENT Label="Entity" SubLabel1=" Type SCORE_CARD">
+<Error Severity="4" Description="ICCHL12W A persistent entity type&apos;s maximum number of occurrences should be defined." />
+<Error Severity="4" Description="ICCHL13W A persistent entity type&apos;s average number of occurrences should be greater than 0." />
+</THLENT>
+<ErrorCounts Errors="0" Warnings="2" />
+</THLENT>
+</ReportDescription>
+</Report>

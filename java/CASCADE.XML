@@ -1,0 +1,68 @@
+﻿<!-- CA Gen Generated makefile for CASCADE -->
+<!-- Copyright (C) 2016 CA. All rights reserved. -->
+<project name="CASCADE"
+         default="all"
+         basedir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\">
+<taskdef name="fileexists" classname="com.ca.gen.bt.tasks.FileExists"/>
+<target name="all" depends="dirs,build,jar" />
+<target name="dirs">
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE"/>
+</target>
+<target name="build" depends="build.cascades"/>
+<target name="build.cascades">
+<!-- CASCADE classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CASCADE"/>
+      <arg value="Verifying CASCADE Cascade Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying CASCADE Cascade Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\egolf6\E0004080.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\egolf6\E0001035.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\egolf6\E0001032.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\egolf6\F0004888.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\egolf6\F0003820.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CASCADE"/>
+      <arg value="Compiling CASCADE Cascade Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling CASCADE Cascade Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\"
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE"
+          includes="
+                   egolf6\E0004080.java,
+                   egolf6\E0001035.java,
+                   egolf6\E0001032.java,
+                   egolf6\F0004888.java,
+                   egolf6\F0003820.java,
+                   ">
+       <classpath>
+          <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE"/>
+          <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes"/>
+          <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes\csu.jar"/>
+          <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes\vwrt.jar"/>
+          <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes\abrt.jar"/>
+       </classpath>
+   </javac>
+</target>
+<target name="jar">
+<!-- C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE\CASCADE.jar -->
+ <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+    <arg value="CASCADE"/>
+    <arg value="Building CASCADE\CASCADE.jar"/>
+ </exec>
+ <echo message=""/>
+ <echo message="...Building CASCADE\CASCADE.jar"/>
+ <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE\CASCADE.jar"
+         quiet="true"/>
+ <jar duplicate="preserve" jarfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE\CASCADE.jar">
+     <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE"
+              includes="**\*.class"/>
+ </jar>
+</target>
+</project>

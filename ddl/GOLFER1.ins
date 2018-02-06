@@ -1,0 +1,68 @@
+
+  DROP DATABASE "GOLFER1";
+
+  CREATE DATABASE "GOLFER1"  ON C DFT_EXTENT_SZ 32; 
+
+  CONNECT TO "GOLFER1" ;
+  CREATE TABLE  "GOLFER"  
+    ("USERID"                           CHAR(8)              NOT NULL,   
+     "PASSWORD"                         CHAR(8)              NOT NULL,   
+     "FIRST_NAME"                       CHAR(30)             NOT NULL,   
+     "LAST_NAME"                        CHAR(30)             NOT NULL,   
+     "HANDICAP_BASIC_INDEX"             SMALLINT             ,   
+     "EMAIL_ADDRESS"                    VARCHAR(100)         ,
+    CONSTRAINT "GOLFERID"
+    PRIMARY KEY 
+      ("USERID"                           ))
+    DATA CAPTURE NONE;
+
+  COMMIT ; 
+
+  CREATE TABLE  "SCORE_CARD"  
+    ("IMAGE"                            BLOB(2M) NOT LOGGED  NOT NULL,   
+     "FK_SCORING_RECOFK_GOLFERUSERID"   CHAR(8)              NOT NULL,   
+     "FK_SCORING_RECOTIME0"             TIME                 NOT NULL,   
+     "FK_SCORING_RECODATE0"             DATE                 NOT NULL,
+    CONSTRAINT "CARDID"
+    PRIMARY KEY 
+      ("FK_SCORING_RECOFK_GOLFERUSERID"   ,   
+       "FK_SCORING_RECOTIME0"             ,   
+       "FK_SCORING_RECODATE0"             ))
+    DATA CAPTURE NONE;
+
+  COMMIT ; 
+
+  CREATE TABLE  "SCORING_RECORD"  
+    ("DATE0"                            DATE                 NOT NULL,   
+     "TIME0"                            TIME                 NOT NULL,   
+     "ADJ_GROSS_SCORE"                  SMALLINT             NOT NULL,   
+     "COURSE_RATING"                    DECIMAL(3,1)         NOT NULL,   
+     "COURSE_SLOPE_RATING"              SMALLINT             NOT NULL,   
+     "NOTE"                             VARCHAR(100)         ,   
+     "FK_GOLFERUSERID"                  CHAR(8)              NOT NULL,
+    CONSTRAINT "SCOREID"
+    PRIMARY KEY 
+      ("FK_GOLFERUSERID"                  ,   
+       "TIME0"                            ,   
+       "DATE0"                            ))
+    DATA CAPTURE NONE;
+
+  COMMIT ; 
+
+CREATE TABLE RPROFX 
+  (IETUID    CHAR(8)   NOT NULL,  
+   IETAPPID  CHAR(4)   NOT NULL,  
+   IETPSNUM  SMALLINT  NOT NULL,  
+   SEQNUM    SMALLINT  NOT NULL,  
+   PDATA     VARCHAR(3590) NOT NULL);  
+
+  COMMIT ; 
+
+CREATE UNIQUE INDEX RPROFXI1 ON RPROFX
+   (IETUID   ASC  , 
+    IETAPPID ASC  , 
+    IETPSNUM DESC , 
+    SEQNUM   ASC ); 
+
+  COMMIT ; 
+

@@ -1,0 +1,78 @@
+
+  USE master 
+
+GO
+
+  DROP DATABASE IEFDB 
+
+GO
+
+  USE master 
+
+GO
+  CREATE DATABASE IEFDB  
+
+GO
+
+  USE IEFDB 
+
+GO
+
+  CREATE TABLE  GOLFER  
+    (USERID                             char(8)              NOT NULL,   
+     PASSWORD                           char(8)              NOT NULL,   
+     FIRST_NAME                         char(30)             NOT NULL,   
+     LAST_NAME                          char(30)             NOT NULL,   
+     HANDICAP_BASIC_INDEX               smallint             NULL,   
+     EMAIL_ADDRESS                      varchar(100)         NULL,
+    CONSTRAINT golferid
+    PRIMARY KEY NONCLUSTERED 
+      (USERID                             )) 
+
+GO
+
+  CREATE TABLE  SCORE_CARD  
+    (IMAGE                              varbinary(max)       NOT NULL,   
+     FK_SCORING_RECOFK_GOLFERUSERID     char(8)              NOT NULL,   
+     FK_SCORING_RECOTIME0               datetime             NOT NULL,   
+     FK_SCORING_RECODATE0               datetime             NOT NULL,
+    CONSTRAINT CARDID
+    PRIMARY KEY NONCLUSTERED 
+      (FK_SCORING_RECOFK_GOLFERUSERID     ,   
+       FK_SCORING_RECOTIME0               ,   
+       FK_SCORING_RECODATE0               )) 
+
+GO
+
+  CREATE TABLE  SCORING_RECORD  
+    (DATE0                              datetime             NOT NULL,   
+     TIME0                              datetime             NOT NULL,   
+     ADJ_GROSS_SCORE                    smallint             NOT NULL,   
+     COURSE_RATING                      DECIMAL(3, 1)        NOT NULL,   
+     COURSE_SLOPE_RATING                smallint             NOT NULL,   
+     NOTE                               varchar(100)         NULL,   
+     FK_GOLFERUSERID                    char(8)              NOT NULL,
+    CONSTRAINT scoreid
+    PRIMARY KEY NONCLUSTERED 
+      (FK_GOLFERUSERID                    ,   
+       TIME0                              ,   
+       DATE0                              )) 
+
+GO
+
+  ALTER TABLE SCORE_CARD  
+    ADD 
+    FOREIGN KEY 
+      (FK_SCORING_RECOFK_GOLFERUSERID     ,   
+       FK_SCORING_RECOTIME0               ,   
+       FK_SCORING_RECODATE0               )
+      REFERENCES SCORING_RECORD                     
+GO 
+
+  ALTER TABLE SCORING_RECORD  
+    ADD 
+    FOREIGN KEY 
+      (FK_GOLFERUSERID                    )
+      REFERENCES GOLFER                             
+GO 
+

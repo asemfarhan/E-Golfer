@@ -1,0 +1,62 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\CASCADE.bat"
+
+=====================RI Script Environment=================
+Operating System: JVM
+Database Manager: "JDBC"
+Environment:      EJB
+Language:         java
+Codepage:
+ISOEncoding:      UTF-8
+
+==============================SUMMARY===============================
+Summary of RI Script Results for RI CASCADE:
+==============================LEGEND================================
+Legend: ... precedes information about an operation to be performed.
+        --- precedes results from an operation which just completed.
+        *** precedes error info from an operation which just failed.
+        (Symbols preceding info are indented to convey step levels.)
+
+==============================DETAILS===============================
+Details of CASCADE RI Script Results:
+CLASSPATH=C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\lib\tools.jar;C:\Program Files\IBM\SQLLIB\java\db2java.zip;.;C:\PROGRA~1\IBM\SQLLIB\java\db2java.zip;C:\PROGRA~1\IBM\SQLLIB\java\db2jcc.jar;C:\PROGRA~1\IBM\SQLLIB\java\sqlj.zip;C:\PROGRA~1\IBM\SQLLIB\java\db2jcc_license_cu.jar;C:\PROGRA~1\IBM\SQLLIB\bin;C:\PROGRA~1\IBM\SQLLIB\java\common.jar
+Buildfile: C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\CASCADE.XML
+
+dirs:
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE
+
+build.cascades:
+     [echo] 
+     [echo] ...Verifying CASCADE Cascade Classes
+     [echo] 
+     [echo] ...Compiling CASCADE Cascade Classes
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\CASCADE.XML:43: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 5 source files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+build:
+
+jar:
+     [echo] 
+     [echo] ...Building CASCADE\CASCADE.jar
+      [jar] Building jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\java\classes\CASCADE\CASCADE.jar
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+IEFSIGNAL:OKBuild for RI CASCADE Completed.
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\gen>

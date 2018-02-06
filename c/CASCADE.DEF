@@ -1,0 +1,10 @@
+; Generated Def file for CASCADE
+LIBRARY         CASCADE
+; CA Gen Generated DLL. Copyright (C) 2016 CA. All rights reserved.
+HEAPSIZE        8192,8192
+EXPORTS
+E0004080
+E0001035
+E0001032
+F0004888
+F0003820

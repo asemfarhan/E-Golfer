@@ -1,0 +1,29 @@
+:execdef
+        user=mansour
+        date=2017/05/16
+        time=00:37:28
+        os=NT.
+
+:source
+        model='EGOLF'
+        subset='ALL'
+        dateup=0000/00/00
+        timeup=00:00
+        saved=YES
+        schema=9.2.A6
+        level=9.2.A6.01
+        codepage=1252.
+:esource.
+
+:systems
+        source=C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\ddl\.
+:esystems.
+
+:execunit
+        os=WINDOWS
+        dbms=MS/SQL
+        dbname=IEFDB.
+:eexecunit.
+
+:eexecdef.
+

@@ -1,0 +1,79 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.bat"
+Initial search for build executables
+  NMAKE.EXE, CL.EXE, LINK.EXE
+
+--- Found NMAKE.EXE
+
+--- Found CL.EXE
+
+--- Found LINK.EXE
+
+
+==================RI Module Script Environment======================
+Operating System: WINDOWS
+Database Manager: "ODBC"
+Environment:      WINDOWS
+Language:         C
+Codepage:
+==============================SUMMARY===============================
+Summary of Load Module Script Results for Load Module CASCADE:
+==============================LEGEND================================
+Legend: ... precedes information about an operation to be performed.
+        --- precedes results from an operation
+        *** precedes error info from an operation which just failed.
+        (Symbols preceding info are indented to convey step levels.)
+
+==============================DETAILS===============================
+Details of CASCADE Load Module Script Results:
+
+Microsoft (R) Program Maintenance Utility Version 14.00.24210.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+...Compiling E0004080
+	cl -c -W3 -Od -nologo -D_X86_ -Dtry=__try -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DWIN32 -DMSC -DWINNT -D_MT -D_DLL -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\OBJC\E0004080.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\E0004080.C"
+E0004080.C
+...Compiling E0001035
+	cl -c -W3 -Od -nologo -D_X86_ -Dtry=__try -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DWIN32 -DMSC -DWINNT -D_MT -D_DLL -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\OBJC\E0001035.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\E0001035.C"
+E0001035.C
+...Compiling E0001032
+	cl -c -W3 -Od -nologo -D_X86_ -Dtry=__try -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DWIN32 -DMSC -DWINNT -D_MT -D_DLL -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\OBJC\E0001032.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\E0001032.C"
+E0001032.C
+...Compiling F0004888
+	cl -c -W3 -Od -nologo -D_X86_ -Dtry=__try -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DWIN32 -DMSC -DWINNT -D_MT -D_DLL -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\OBJC\F0004888.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\F0004888.C"
+F0004888.C
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\F0004888.C(192): warning C4013: 'E0004080' undefined; assuming extern returning int
+...Compiling F0003820
+	cl -c -W3 -Od -nologo -D_X86_ -Dtry=__try -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DWIN32 -DMSC -DWINNT -D_MT -D_DLL -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\OBJC\F0003820.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\F0003820.C"
+F0003820.C
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\F0003820.C(183): warning C4013: 'E0001035' undefined; assuming extern returning int
+...Compiling CASCADE version information
+	copy "C:\Program Files (x86)\CA\Gen86Free\gen\version\applno.bat" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\applno.bat"
+        1 file(s) copied.
+	call "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\applno.bat" YES "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\" CASCADE
+APPLNO.BAT : CA Gen BUILDTIME and BUILDVER update file
+	rc -r -DWIN -DIEF_BITMAP="" -I"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\." -I"C:\Program Files (x86)\CA\Gen86Free\gen\version" -DCUSTOMER_APPL -fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.RES" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.rc"
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+
+Compiles for CASCADE DLL Dependencies done.
+...Linking CASCADE DLL
+	link /OPT:NOREF  /NOLOGO /NODEFAULTLIB:LIBCMT /DLL /SUBSYSTEM:WINDOWS  /entry:_DllMainCRTStartup@12 /OUT:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.DLL"  /implib:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.LIB" /def:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.DEF" @"C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.LNK"
+   Creating library C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.LIB and object C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\c\CASCADE.exp
+IEFSIGNAL:OK
+Build for RI module CASCADE complete.
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\gen>

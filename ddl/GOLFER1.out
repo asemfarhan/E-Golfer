@@ -1,0 +1,47 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\ddl\GOLFER1.bat"
+Initial search for build executables
+TIDB2DDL.EXE
+
+--- Found TIDB2DDL.EXE
+
+
+Database maintenance started
+Copying Bind files to working directory.
+
+
+TIDB2DDL: CA Gen DB2 CS DDL Installer
+TIDB2DDL: Copyright (C) 2016 CA. All rights reserved.
+TIDB2DDL: All rights reserved.
+
+TIDB2DDL: Connection="DB2", User="MANSOUR", Password="***"
+
+TIDB2DDL: Database GOLFER1 Dropped
+TIDB2DDL: Database GOLFER1 Created
+TIDB2DDL: Connected to Database: GOLFER1
+TIDB2DDL: Table GOLFER Created
+TIDB2DDL: Commit
+TIDB2DDL: Table SCORE_CARD Created
+TIDB2DDL: Commit
+TIDB2DDL: Table SCORING_RECORD Created
+TIDB2DDL: Commit
+TIDB2DDL: Table RPROFX Created
+TIDB2DDL: Commit
+TIDB2DDL: Index RPROFXI1 Created
+TIDB2DDL: Commit
+TIDB2DDL: DDL Install Succeeded
+
+IEFSIGNAL:OK
+GOLFER1 Database Installed Successfully.
+
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>

@@ -1,0 +1,36 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\egolf6.ief\ddl\IEFDB.bat"
+Initial search for build executables
+TIS95DDL.EXE
+
+--- Found TIS95DDL.EXE
+
+
+Database maintenance started
+
+TIS95DDL: CA Gen SQLServer DDL Installer
+TIS95DDL: Copyright (C) 2016 CA. All rights reserved.
+TIS95DDL: All rights reserved.
+
+TIS95DDL: Connection="MANSOUR\IEFDB", User="admin", Password="***"
+
+TIS95DDL: Error 1 connecting to the database server
+TIS95DDL: Microsoft.SqlServer.Management.Common.ConnectionFailureException
+Microsoft.SqlServer.ConnectionInfo
+Failed to connect to server MANSOUR\IEFDB.
+TIS95DDL: DDL Install Failed
+
+IEFSIGNAL:FAIL
+IEFDB Error: Database Install Failed
+
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>
